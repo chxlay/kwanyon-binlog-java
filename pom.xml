@@ -6,32 +6,32 @@
 
     <groupId>com.kwanyon.com</groupId>
     <artifactId>kwanyon-binlog-java</artifactId>
-    <version>1.0</version>
+    <version>0.1.0</version>
     <packaging>jar</packaging>
 
     <properties>
         <!-- 项目总版本号统一管理 -->
         <revision>0.1.0</revision>
         <kwanyon-starter.version>${revision}</kwanyon-starter.version>
-        <!-- Java 版本 -->
-        <jdk.version>11</jdk.version>
+        <!-- Java 版本,为了兼容低版本的,该项目没有使用JDK8之后的特性,JDK8的用户自行更换为8即可 -->
+        <jdk.version>21</jdk.version>
         <maven.compiler.source>${jdk.version}</maven.compiler.source>
         <maven.compiler.target>${jdk.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 
-        <!-- Spring 版本 5.3.23, 小于5.3.26版本存在权限绕过漏洞 -->
-        <springframework.version>5.3.26</springframework.version>
         <!-- Spring 版本管理 -->
-        <spring-boot.version>2.7.10</spring-boot.version>
+        <springframework.version>6.2.0</springframework.version>
+        <!-- SpringBoot 版本管理 -->
+        <spring-boot.version>3.4.0</spring-boot.version>
         <!-- SpringCloud 版本管理 -->
-        <spring-cloud.version>2021.0.6</spring-cloud.version>
-        <!-- spring-阿里巴巴 相关-->
-        <spring-cloud-alibaba.version>2021.0.5.0</spring-cloud-alibaba.version>
+        <spring-cloud.version>2024.0.0</spring-cloud.version>
 
+        <!-- spring-阿里巴巴 相关 https://github.com/alibaba/spring-cloud-alibaba/wiki/版本说明 -->
+        <spring-cloud-alibaba.version>2023.0.1.0</spring-cloud-alibaba.version>
 
         <!-- BinLog 连接组件版本 -->
-        <zendesk.binlog.version>0.27.5</zendesk.binlog.version>
+        <zendesk.binlog.version>0.30.1</zendesk.binlog.version>
     </properties>
 
 
