@@ -1,1 +1,12 @@
-##### 配置文件示例
+# 这里是示例的配置，开发中配置已迁移到 nacos
+kwanyon:
+  # binlog 连接配置
+  binlog:
+    host: ${MASTER_HOST:spring.datasource.host}
+    port: ${spring.datasource.port:3306}
+    username: ${spring.datasource.druid.username:root}
+    password: ${spring.datasource.druid.password:123456}
+    tables:
+      # 这里配置的意思是, binlog 日志监听的表千千万,但是我只处理我这里配置的表名(微服务中每个模块单独配置，不同的模块 监听处理的是不同的表事件)
+      - database.table_name_1
+      - database.table_name_2

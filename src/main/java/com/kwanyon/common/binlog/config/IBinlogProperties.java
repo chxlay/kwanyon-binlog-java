@@ -1,5 +1,6 @@
 package com.kwanyon.common.binlog.config;
 
+import lombok.Getter;
 import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
@@ -13,6 +14,7 @@ import java.util.List;
  * @since 2022-11-14 13:06
  */
 @Setter
+@Getter
 @ConfigurationProperties(prefix = "kwanyon.binlog")
 public class IBinlogProperties {
     /**
