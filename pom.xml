@@ -4,15 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.xtechcn.com</groupId>
-    <artifactId>stonmace-binlog-java</artifactId>
+    <groupId>com.kwanyon.com</groupId>
+    <artifactId>kwanyon-binlog-java</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
     <properties>
         <!-- 项目总版本号统一管理 -->
-        <revision>2.0</revision>
-        <xtechcn-starter.version>${revision}</xtechcn-starter.version>
+        <revision>0.1.0</revision>
+        <kwanyon-starter.version>${revision}</kwanyon-starter.version>
         <!-- Java 版本 -->
         <jdk.version>11</jdk.version>
         <maven.compiler.source>${jdk.version}</maven.compiler.source>
@@ -81,6 +81,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
+            <optional>true</optional>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -94,6 +95,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <optional>true</optional>
             <scope>provided</scope>
         </dependency>
 
@@ -101,6 +103,7 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
+            <optional>true</optional>
             <scope>provided</scope>
         </dependency>
 
